@@ -10,8 +10,24 @@
     />
 
     <style>
+    
       body {
         font-family: Arial, sans-serif;
+      }
+        nav{
+        background: #0d3b66;
+      }
+      .pic1{
+        width: 100px;
+        border-radius: 50px;
+      }
+      .middlecard{
+  
+         background: #0d3b66;
+         height: 500px;
+      }
+      .card1{
+        background: #cbe0f6;
       }
       .hero {
         background: #0d3b66;
@@ -34,13 +50,25 @@
         color: white;
         padding: 50px 0;
       }
+    .orbit-inner {
+       width: 200px; height: 200px; animation: rotate 10s linear infinite; 
+      }
+.orbit-outer { 
+  width: 450px; height: 450px; animation: rotate 20s linear infinite reverse; 
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); 
+    }
+  }
     </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">whitepace</a>
+        <a class="navbar-brand" href="#"> <img src="Logo.png" alt=""></a>
         <button
           class="navbar-toggler"
           data-bs-toggle="collapse"
@@ -52,9 +80,11 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
           </ul>
           <a href="#" class="btn btn-warning ms-3">Login</a>
+          <a href="#" class="btn btn-primary ms-3 ">Try Whitespace Free</a>
         </div>
       </div>
     </nav>
@@ -68,10 +98,10 @@
               Project management software that enables your teams to
               collaborate.
             </p>
-            <a href="#" class="btn btn-primary">Try Whitepace</a>
+            <a href="#" class="btn btn-primary" style="margin: 30px 0px;">Try Whitepace</a>
           </div>
           <div class="col-lg-6">
-            <div class="bg-light" style="height: 250px"></div>
+            <div class="card1" style="height: 350px"></div>
           </div>
         </div>
       </div>
@@ -82,19 +112,91 @@
           <div class="col-lg-6">
             <h2>Project Management</h2>
             <p>Organize tasks and boost productivity with powerful tools.</p>
-            <button class="btn btn-primary">Get Started</button>
+            <button class="btn btn-primary" style="margin: 30px 0px;">Get Started</button>
           </div>
           <div class="col-lg-6">
-            <div class="bg-secondary" style="height: 250px"></div>
+            <div class="card1" style="height: 350px"></div>
           </div>
         </div>
       </div>
     </section>
     <section class="section text-center">
       <div class="container">
+         <div class="row align-items-center">
+           
+<div class="col-lg-4 position-relative d-flex justify-content-center align-items-center" style="height: 400px; width: 400px;">
+    
+    <!-- Central Icon/Logo -->
+    <div class="bg-white shadow rounded-2 p-2 z-5">
+        <!-- Replace with your icon -->
+        <i class="bi bi-chevron-double-up text-primary fs-5"><img src="Logo Icon.png" style="width: 35px; height: 30px;" alt=""></i>
+    </div>
+
+    <!-- Orbit 1 (Inner) -->
+    <div class="position-absolute border border-dashed rounded-circle orbit-inner">
+        <div class="bg-primary rounded-circle position-absolute"
+         style="width:35px; height:35px; top:0; left:50%; transform:translate(-50%, -50%);"></div>
+
+    <!-- Right (Red) -->
+    <div class="bg-danger rounded-circle position-absolute"
+         style="width:35px; height:35px; right:0; top:50%; transform:translate(50%, -50%);"></div>
+
+    <!-- Bottom (Green) -->
+    <div class="bg-success rounded-circle position-absolute"
+         style="width:35px; height:35px; bottom:0; left:50%; transform:translate(-50%, 50%);"></div>
+
+    <!-- Left (Yellow) -->
+    <div class="bg-warning rounded-circle position-absolute"
+         style="width:35px; height:35px; left:0; top:50%; transform:translate(-50%, -50%);"></div>
+
+        
+    </div>
+
+    <!-- Orbit 2 (Outer) -->
+    <div class="position-absolute border border-dashed rounded-circle orbit-outer">
+        <!-- Add multiple dots using bg-primary, bg-danger, etc. -->
+       <div class="position-absolute top-50 start-50"
+         style="transform: translate(-50%, -50%); width:0; height:0;">
+
+        <!-- Blue -->
+        <div class="position-absolute"
+             style="transform: rotate(0deg) translate(205px);">
+            <div class="bg-primary rounded-circle" style="width:35px; height:35px;"></div>
+        </div>
+
+        <!-- Red -->
+        <div class="position-absolute"
+             style="transform: rotate(70deg) translate(200px);">
+            <div class="bg-danger rounded-circle" style="width:35px; height:35px;"></div>
+        </div>
+
+        <!-- Green -->
+        <div class="position-absolute"
+             style="transform: rotate(144deg) translate(225px);">
+            <div class="bg-success rounded-circle" style="width:35px; height:35px;"></div>
+        </div>
+
+        <!-- Yellow -->
+        <div class="position-absolute"
+             style="transform: rotate(216deg) translate(250px);">
+            <div class="bg-warning rounded-circle" style="width:35px; height:35px;"></div>
+        </div>
+
+        <!-- Purple -->
+        <div class="position-absolute"
+             style="transform: rotate(288deg) translate(235px);">
+            <div class="rounded-circle"
+                 style="width:35px; height:35px; background-color:purple;"></div>
+        </div>
+
+    </div>
+    </div>
+</div>
+          <div class="col-lg-8">
         <h2>Work Together</h2>
         <p>Collaborate with your team seamlessly.</p>
-        <button class="btn btn-primary">Try Now</button>
+        <button class="btn btn-primary" style="margin: 30px 0px;">Try Now</button>
+        </div>
       </div>
     </section>
 
@@ -103,46 +205,85 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <h2>Use as Extension</h2>
-            <p>Extend functionality with integrations.</p>
-            <button class="btn btn-light">Learn More</button>
+            <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+.</p>
+            <button class="btn btn-light" style="margin: 30px 0px;"> Let’s Go</button>
           </div>
           <div class="col-lg-6">
-            <div class="bg-light" style="height: 200px"></div>
+            <div class="card1" style="height: 350px"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container text-center">
-        <h2>Customise it to your needs</h2>
-        <p>Adapt the platform to your workflow.</p>
+    <section class="section text-center">
+       <div class="container ">
+        <div class="row align-items-center">
+           <div class="col-lg-6">
+            <div class="card1" style="height: 350px"></div>
+          </div>
+          <div class="col-lg-6">
+           <h2>Customise it to your needs</h2>
+        <p>Adapt the platform to your workflow<p>
+            <button class="btn btn-primary" style="margin: 30px 0px;"> Let’s Go</button>
+          </div>
+        </div>
       </div>
+
+       
     </section>
 
     <section class="section bg-light">
-      <div class="container text-center">
+      <div class="container ">
         <h2>Choose Your Plan</h2>
-        <div class="row mt-5">
+        <div class="row mt-5 align-items-center">
           <div class="col-md-4">
             <div class="card card-pricing p-4">
               <h4>Free</h4>
               <h2>$0</h2>
-              <button class="btn btn-outline-primary">Get Started</button>
+              <p>Capture ideas and find them quickly</p>
+             <ul>
+  <li>Sync unlimited devices</li>
+  <li>10 GB monthly uploads</li>
+  <li>200 MB max note size</li>
+  <li>Customize Home dashboard and access extra widgets</li>
+  <li>Connect primary Google Calendar account</li>
+  <li>Add due dates, reminders, and notifications to your tasks</li>
+</ul>
+              <button class="btn btn-outline-primary text-black">Get Started</button>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card card-pricing p-4 bg-primary text-white">
+            <div class="card card-pricing p-4 middlecard text-white justify-content-center">
               <h4>Personal</h4>
               <h2>$11.99</h2>
-              <button class="btn btn-light">Choose</button>
+                        <p>Capture ideas and find them quickly</p>
+             <ul>
+  <li>Sync unlimited devices</li>
+  <li>10 GB monthly uploads</li>
+  <li>200 MB max note size</li>
+  <li>Customize Home dashboard and access extra widgets</li>
+  <li>Connect primary Google Calendar account</li>
+  <li>Add due dates, reminders, and notifications to your tasks</li>
+</ul>
+              
+              <button class="btn btn-primary bg-primary">Get Started</button>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-pricing p-4">
               <h4>Organization</h4>
               <h2>$49.99</h2>
-              <button class="btn btn-outline-primary">Choose</button>
+                          <p>Capture ideas and find them quickly</p>
+             <ul>
+  <li>Sync unlimited devices</li>
+  <li>10 GB monthly uploads</li>
+  <li>200 MB max note size</li>
+  <li>Customize Home dashboard and access extra widgets</li>
+  <li>Connect primary Google Calendar account</li>
+  <li>Add due dates, reminders, and notifications to your tasks</li>
+</ul>
+              <button class="btn btn-outline-primary text-black">Get Started</button>
             </div>
           </div>
         </div>
@@ -152,18 +293,30 @@
     <section class="section blue-section text-center">
       <div class="container">
         <h2>Your work, everywhere you are</h2>
-        <button class="btn btn-light">Try Today</button>
+        <p>Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and <br> OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available</p>
+        <button class="btn btn-primary bg-primary">Try Taskeys</button>
       </div>
     </section>
 
     <section class="section text-center">
       <div class="container">
-        <h2>Our Sponsors</h2>
-        <div class="row mt-4">
-          <div class="col">Apple</div>
-          <div class="col">Microsoft</div>
-          <div class="col">Slack</div>
-          <div class="col">Google</div>
+         <div class="row align-items-center">
+              <div class="col-lg-6">
+           <h2>100% your data</h2>
+        <p>The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.<p>
+            <button class="btn btn-primary" style="margin: 30px 0px;"> Read More</button>
+          </div>
+           <div class="col-lg-6">
+            
+            </div>
+          </div>
+        </div>
+        <h2 class="mt-5">Our Sponsors</h2>
+        <div class="d-flex justify-content-between align-items-center mt-5 gx-5 flex-wrap" ">
+          <div class="col-md-3"><img src="Apple.png" alt="" style="width:55.5px ;height: 68px;"></div>
+          <div class="col-md-3"><img src="microsoft 1.png" alt="" style="width:287px ;height: 62px;"></div>
+          <div class="col-md-3"><img src="Slack.png" alt="" style="width:280px ;height: 71px;"></div>
+          <div class="col-md-3"><img src="Google.png" alt="" style="width:211px ;height: 69.81px;"></div>
         </div>
       </div>
     </section>
@@ -180,6 +333,60 @@
           </div>
           <div class="col-md-4">
             <div class="card p-3">Loved it!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-light">
+      <div class="container ">
+        <h2>Choose Your Plan</h2>
+        <div class="row mt-5 align-items-center">
+          <div class="col-md-4">
+            <div class="card card-pricing p-4">
+          <h1>"</h1>
+          <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+           <div class="row mt-4 align-items-center">
+            <div class="col-md-4">
+              <img class="pic1" src="p1.png" alt="profile">
+            </div>
+            <div class="col-md-8">
+                <h5>Oberon Shaw, MCH</h5>
+                <p>Head of Talent Acquisition, North America</p>
+            </div>
+           </div>
+             
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-pricing p-4 bg-primary text-white">
+             <h1>"</h1>
+          <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+              <div class="row mt-4 align-items-center">
+            <div class="col-md-4">
+              <img class="pic1" src="p1.png" alt="profile">
+            </div>
+            <div class="col-md-8">
+                <h5>Oberon Shaw, MCH</h5>
+                <p>Head of Talent Acquisition, North America</p>
+            </div>
+           </div>
+               
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="card card-pricing p-4 bg-primary text-white">
+                <h1>"</h1>
+          <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+              <div class="row mt-4 align-items-center ">
+            <div class="col-md-4">
+              <img class="pic1" src="p2.png" alt="profile">
+            </div>
+            <div class="col-md-8 bg">
+                <h5>Oberon Shaw, MCH</h5>
+                <p>Head of Talent Acquisition, North America</p>
+            </div>
+           </div>
+            </div>
           </div>
         </div>
       </div>
