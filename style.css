@@ -4,6 +4,7 @@
         nav{
         background: #0d3b66;
       }
+
       .bg-custom {
   background-image: url('Element.png');
   background-size: cover;
@@ -14,6 +15,29 @@
   position: absolute;
   opacity: 50%;
 
+}
+h1{
+  font-size: 50px;
+  font-weight: 900;
+}
+h2{
+  display: flex;
+  flex-direction: column;
+}
+h2 img{
+  margin-top: -20px;
+  width: 300px;
+  z-index: -1;
+}
+
+.worktogether h2 img{
+  margin-left: 30%;
+}
+.customise h2 img{
+  margin-left: 20%;
+}
+.customise1  img{
+  margin-left: 45%;
 }
 .bg-custom2{
     background-image: url('BACKGROUND.png');
